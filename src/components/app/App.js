@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import logo from '../../logo.svg';
+import SideNavCart from '../side-nav-cart/side-nav-cart'
 import AppHeader from '../app-header/app-header'
 import BooksList from '../books-list/books-list'
 import './App.css';
@@ -24,6 +25,7 @@ class App extends Component {
         <div className='container-wrapper'>
           <AppHeader/>
         </div>
+        <SideNavCart/>
         <BooksList books={this.state.books}></BooksList>
       </div>
     );
