@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import logo from '../../logo.svg';
 import AppHeader from '../app-header/app-header'
+import BooksList from '../books-list/books-list'
 import './App.css';
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
         <div className='container-wrapper'>
           <AppHeader/>
         </div>
+        <BooksList books={this.state.books}></BooksList>
       </div>
     );
   }
