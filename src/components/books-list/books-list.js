@@ -8,8 +8,8 @@ class BooksList extends Component {
     return(
       <div className='container'>
         <Collection header='Books'>
-          {books.map((book) => (
-            <BookCollectionItem book={book}></BookCollectionItem>
+          {books.map((book, idx) => (
+            <BookCollectionItem book={book} key={idx}></BookCollectionItem>
           ))}
         </Collection>
       </div>

@@ -5,7 +5,9 @@ class SearchFilter extends Component {
     return(
       <div>
         <input id="search" placeholder="Search" />
-        <div className="search-results"></div>
+        <select>
+          <option selected disabled>Filter by:</option>
+        </select>
       </div>
     )
   }

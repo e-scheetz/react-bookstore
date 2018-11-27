@@ -5,7 +5,7 @@ class SideNavCart extends Component {
   render(){
     return(
       <SideNav
-        trigger={<Button floating large className='red' waves='light' icon='add' />}
+        trigger={<Button className='red' waves='light'>Cart</Button>}
         options={{ closeOnClick: true }}
         >
 
