@@ -5,7 +5,7 @@ import SideNavCart from '../side-nav-cart/side-nav-cart'
 
 class CustomNav extends Component {
   render(){
-    // const { books } = this.props
+    const { books } = this.props
     const bookKeysArr = ["None", "Author", "Publisher"]
     return(
       <div className='container'>
@@ -27,7 +27,7 @@ class CustomNav extends Component {
             <Input id="search" placeholder="Search" />
           </Col>
           <Col s={4} m={4} l={4}>
-            <SideNavCart/>
+            <SideNavCart books={books}/>
           </Col>
         </Row>
       </div>

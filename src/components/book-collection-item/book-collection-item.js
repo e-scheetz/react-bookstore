@@ -17,7 +17,8 @@ class BookCollectionItem extends Component {
           <Col m={1} l={1} className='hide-on-small-only'></Col>
         </Row>
         <Row className='valign-wrapper'>
-          <Col m={4} l={4} className='hide-on-small-only'></Col>
+          <Col m={3} l={3} className='hide-on-small-only'></Col>
+          <Col s={1} m={1} l={1}>{book.inCart ? 'In Cart' : ''}</Col>
           <Col m={2} l={2} className='hide-on-small-only valign center-align'><h5>PRICE:</h5></Col>
           <Col s={4} m={2} l={2} className='valign center-align'><h5>${book.price}</h5></Col>
           <Col m={2} l={2} className='valign center-align hide-on-small-only'><h5>CART:</h5></Col>
