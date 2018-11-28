@@ -5,7 +5,7 @@ class InCart extends Component {
   render(){
     const { book } = this.props
     return(
-      <SideNavItem href={null} price={book.price}>{book.title}</SideNavItem>
+      <SideNavItem className="removeOverflow" href={null} price={book.price}>{book.title}</SideNavItem>
     )
   }
 }

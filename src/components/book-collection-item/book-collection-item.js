@@ -3,7 +3,7 @@ import { Row, CollectionItem, Col, Button } from 'react-materialize'
 
 class BookCollectionItem extends Component {
   render(){
-    const { book } = this.props
+    const { book, addRemoveCart } = this.props
     return(
       <CollectionItem className='light-blue'>
         <Row>
@@ -22,8 +22,8 @@ class BookCollectionItem extends Component {
           <Col m={2} l={2} className='hide-on-small-only valign center-align'><h5>PRICE:</h5></Col>
           <Col s={4} m={2} l={2} className='valign center-align'><h5>${book.price}</h5></Col>
           <Col m={2} l={2} className='valign center-align hide-on-small-only'><h5>CART:</h5></Col>
-          <Col s={4} m={2} l={2} className='valign center-align'><Button waves='light'><i className="material-icons">add</i></Button></Col>
-          <Col s={4} m={2} l={2} className='valign center-align'><Button waves='light'><i className="material-icons">remove</i></Button></Col>
+          <Col s={4} m={2} l={2} className='valign center-align'><Button onClick={()=>addRemoveCart(book.id, true)} waves='light'><i className="material-icons">add</i></Button></Col>
+          <Col s={4} m={2} l={2} className='valign center-align'><Button onClick={()=>addRemoveCart(book.id, true)} waves='light'><i className="material-icons">remove</i></Button></Col>
         </Row>
       </CollectionItem>
     )

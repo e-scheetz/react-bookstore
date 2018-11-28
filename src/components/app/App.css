@@ -7,3 +7,7 @@
 a{
   color: black
 }
+
+.removeOverflow{
+  overflow: auto;
+}
